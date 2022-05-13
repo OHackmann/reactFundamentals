@@ -7,7 +7,7 @@ export default props => {
     function getProdutosListItem() {
         return produtos.map(prod => {
             return <li key={prod.id}>
-                {prod.id} - {prod.nome} R$ {prod.preco}</li>
+                {prod.id} - {prod.nome} - R$ {prod.preco}</li>
         })
     }
 
@@ -15,8 +15,10 @@ export default props => {
         <div>
             <h2>Repetição</h2>
             <ul>
-                {getProdutosListItem}
+                {getProdutosListItem ()}
             </ul>
         </div>
     )
 } 
+
+
